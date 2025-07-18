@@ -53,7 +53,7 @@ jobs:
               make install-strip
               cd ${{github.workspace}}
               tar -cjvf gcc.tar.bz2 -C product .
-              sleep 
+              sleep infinity 
         - uses: softprops/action-gh-release@master
           with:
               token: ${{secrets.GITHUB_TOKEN}}
